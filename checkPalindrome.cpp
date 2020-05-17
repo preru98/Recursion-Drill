@@ -21,5 +21,3 @@ bool check_palindrome(int start, int end, string sentence){
     }
     return true;
 }
-
-

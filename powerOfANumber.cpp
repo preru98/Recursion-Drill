@@ -11,13 +11,13 @@ int main(){
 }
 
 int power(int number, int exponent){
-    if(exp==0){
+    if(exponent==0){
         return 1;
     }
-    else if(exp%2==0){
-        return pow(base*base, exp/2);
+    else if(exponent%2==0){
+        return power(number*number, exponent/2);
     }
     else{
-        return base*pow(base*base, (exp-1)/2);
+        return number*power(number*number, (exponent-1)/2);
     }
 }
